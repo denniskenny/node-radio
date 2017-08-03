@@ -1,0 +1,33 @@
+{
+  "name": "node-radio",
+  "version": "1.0.0",
+  "description": "playlist scanner",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "map-stream": "0.0.7",
+    "node-id3": "0.0.9",
+    "vinyl-fs": "^2.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denniskenny/node-radio.git"
+  },
+  "keywords": [
+    "node",
+    "koa",
+    "playlist",
+    "scanner"
+  ],
+  "author": "Dennis Kenny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denniskenny/node-radio/issues"
+  },
+  "homepage": "https://github.com/denniskenny/node-radio#readme"
+}
