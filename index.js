@@ -15,8 +15,9 @@ router.get('/mp3', async function (ctx, next)  {
     let fileList = '';
 
     let createDB = (file, cb) => {
+        console.log(file.path);
         var id3 = nodeID3.read(file.path);
-        console.log(id3);
+        console.log('id3 : ' + id3);
         fileList += id3.artist + ' - ' + id3.title + '\n';
         cb(null, file);
     };   
@@ -56,9 +57,13 @@ app
     const ms = Date.now() - start;
     console.log(`${ctx.method} ${ctx.url} - ${ms}`);
   })
+  .use(async (ctx, next) => {
+    ctx.set('Access-Control-Allow-Origin', '*');
+    ctx.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    ctx.set('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
+    await next();
+  })
   .use(router.routes())
   .use(router.allowedMethods())
-  // x-response-time
 
-
-app.listen(3000);
+app.listen(8000);

@@ -1,3 +1,6 @@
+#ignore mp3 files 
+tests/
+
 # Logs
 logs
 *.log
