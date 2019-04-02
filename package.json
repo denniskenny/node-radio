@@ -8,9 +8,15 @@
     "koa-router": "^7.4.0",
     "map-stream": "0.0.7",
     "node-id3": "^0.1.7",
-    "vinyl-fs": "^2.4.4"
+    "vinyl-fs": "^3.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  },
   "scripts": {
     "test": "test"
   },
